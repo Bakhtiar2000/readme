@@ -62,27 +62,13 @@ Make sure you have the following installed:
    ```bash
    python app.py
 
-### 2. Testing the API with Postman
+### 2. Testing the Application
 - You can use Postman to test the API by sending a POST request to the /predict endpoint.
 
 - URL: http://127.0.0.1:5000/predict
 
-- Method: POST
+- Alternatively, use Postman or similar tools to test API endpoints.
 
-- Headers:
-
-- Content-Type: application/json
-- Request Body (JSON):
-{
-  "age": 17,
-  "test_score": 89,
-  "high_school_percentage": 77
-}
-
-- Example Response:
-{
-  "admission_status": "Admitted"
-}
 ## API Endpoints
 - /predict
 - Method: POST
