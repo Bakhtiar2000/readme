@@ -91,4 +91,5 @@ Make sure you have the following installed:
 
 ## Backend Architechture
 
-- The model uses Age, Test Score, and High School Percentage to predict whether a student will be admitted. The model was trained on historical admission data.
+![System Architechture](/Sys_Arc.jpg)
+
