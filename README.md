@@ -35,21 +35,6 @@ Ensure you have the following installed:
    cd repository-name
 
 
-## Installation
-
-### Prerequisites
-Make sure you have the following installed:
-- **Python 3.x** (preferably Python 3.7+)
-- **pip** (Python package manager)
-
-### Steps to install
-
-1. Clone this repository:
-
-   ```bash
-   git clone git@github.com:linkon63/team-hello-world-hackathon-backend.git
-   cd repository-name
-
 2.  manually install the dependencies:
     ```bash
     pip install flask scikit-learn numpy pandas
