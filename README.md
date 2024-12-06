@@ -63,9 +63,7 @@ Make sure you have the following installed:
    python app.py
 
 ### 2. Testing the Application
-- You can use Postman to test the API by sending a POST request to the /predict endpoint.
-
-- URL: http://127.0.0.1:5000/predict
+- Open a web browser and navigate to http://127.0.0.1:5000 to interact with the web interface.
 
 - Alternatively, use Postman or similar tools to test API endpoints.
 
