@@ -31,7 +31,7 @@ Ensure you have the following installed:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/repository-name.git
+   git clone git@github.com:linkon63/team-hello-world-hackathon-backend.git
    cd repository-name
 
 
