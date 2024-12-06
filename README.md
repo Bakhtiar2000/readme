@@ -1,6 +1,6 @@
-# AI-Powered Safety Insights and SOS System
+# AI-Powered Safety Heatmap
 
-This project provides a web application powered by **Flask** that enables users to input safety concerns and visualize interactive **heatmaps** of safe and unsafe areas. It also features a **voice-activated SOS system** that notifies nearby police stations in emergencies. Users can explore area-specific safety information based on real-time and historical data to plan their visits with better safety measures.
+This project provides a web application that enables users to input safety concerns and visualize interactive **heatmaps** of safe and unsafe areas. It also features a **voice-activated SOS system** that notifies nearby police stations in emergencies. Users can explore area-specific safety information based on real-time and historical data to plan their visits with better safety measures.
 
 ---
 
@@ -8,7 +8,7 @@ This project provides a web application powered by **Flask** that enables users 
 - **Interactive Safety Heatmap**: Generates heatmaps based on user input and historical data, highlighting safe and unsafe areas.
 - **Voice-Activated SOS**: Activates the SOS system via voice commands and alerts nearby police stations in emergencies.
 - **Area Safety Insights**: Enables users to explore and assess the safety of a location before visiting.
-- **Flask Backend**: The API and data processing logic are implemented using Flask.
+- **AI Prediction**: Predicts the crime rate till a year analyzing the record of previous data of that region.
 
 ---
 
@@ -47,7 +47,7 @@ Make sure you have the following installed:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/repository-name.git
+   git clone git@github.com:linkon63/team-hello-world-hackathon-backend.git
    cd repository-name
 
 2.  manually install the dependencies:
@@ -89,5 +89,6 @@ Make sure you have the following installed:
 - Description: Predicts admission status based on the provided features.
 - Request Body (JSON):
 
-## Model Details
+## Backend Architechture
+
 - The model uses Age, Test Score, and High School Percentage to predict whether a student will be admitted. The model was trained on historical admission data.
