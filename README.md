@@ -1,4 +1,4 @@
-# Primitive Data Types
+# Primitive Data Types [6.2]
 
 ## Numeric Types:
 
@@ -28,7 +28,7 @@ char ch = 'A';
 
 ---
 
-# Character String Types
+# Character String Types [6.3]
 
 ## Design Issues:
 
@@ -98,7 +98,7 @@ char ch = 'A';
 
 ---
 
-# Enumeration Types
+# Enumeration Types [6.4]
 
 ## Design Issues:
 
@@ -120,7 +120,7 @@ Color c = Green;
 
 ---
 
-# Array Types
+# Array Types [6.5]
 
 ## Design Issues:
 
@@ -140,18 +140,92 @@ Color c = Green;
 ## Array Categories:
 
 1. **Static Arrays**: Fixed subscript ranges and allocated before runtime.
+
+```c
+#include <stdio.h>
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    printf("First element: %d\n", arr[0]);
+    return 0;
+}
+```
 2. **Fixed Stack-Dynamic Arrays**: Allocated at declaration elaboration time during execution.
+
+```c
+#include <stdio.h>
+
+void printArray(int n) {
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        arr[i] = i * 10;
+    }
+    printf("Last element: %d\n", arr[n-1]);
+}
+
+int main() {
+    printArray(5);
+    return 0;
+}
+```
+
 3. **Fixed Heap-Dynamic Arrays**: Allocated at runtime using heap memory.
+
+```cpp
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> arr = {1, 2, 3, 4, 5};
+    std::cout << "First element: " << arr[0] << std::endl;
+    return 0;
+}
+```
+
 4. **Heap-Dynamic Arrays**: Fully dynamic subscript ranges and allocation during execution.
+
+```cpp
+#include <iostream>
+
+int main() {
+    int size;
+    std::cout << "Enter size: ";
+    std::cin >> size;
+
+    int* arr = new int[size];
+    for (int i = 0; i < size; i++) arr[i] = i * 2;
+
+    std::cout << "Last element: " << arr[size-1] << std::endl;
+    delete[] arr;
+    return 0;
+}
+```
 
 ---
 
-# Record Types
+# Record Types [6.7]
 
 ## Design Issues:
 
 - What is the syntactic form of references to fields?
 - Are elliptical references allowed?
+
+## Implementation:
+
+```cpp
+#include <iostream>
+
+struct Person {
+    std::string name;
+    int age;
+};
+
+int main() {
+    Person person = {"Jane", 30};
+    std::cout << "Name: " << person.name << ", Age: " << person.age << std::endl;
+    return 0;
+}
+```
 
 ## Evaluation:
 
@@ -160,7 +234,7 @@ Color c = Green;
 
 ---
 
-# Union Types
+# Union Types [6.10]
 
 ## Design Issues:
 
@@ -190,7 +264,7 @@ int main() {
 
 ---
 
-# Pointers
+# Pointers [6.11]
 
 ## Design Issues:
 
